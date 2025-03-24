@@ -24,7 +24,7 @@ biblabel=brackets
 
 \title{
     Vibronic effects in the absorption spectra of strontium phenoxide, SrOPh,
-    and its deuterated version, SrOPh-d5
+    and its deuterated version, SrOPh-d$_5$
 }
 
 \author{..., Paweł Wójcik, ...}
@@ -36,7 +36,7 @@ biblabel=brackets
 \label{sec:intro}
 
 This document presents simulation of the absorption spectra of strontium
-phenoxide and its deuterated version: SrOPh, SrOPh-d5. Both molecules belong of
+phenoxide and its deuterated version: SrOPh, SrOPh-d$_5$. Both molecules belong of
 the family of second-group metal organic-mono-oxides, which are characterized
 by an alkali-atom-like spectrum induced by the presence of a single unpaired
 electron localized at the metal atom. The molecular ground state $\tilde{X}^2 A
@@ -53,10 +53,11 @@ very similar potential energy surfaces, which results in almost no changes to
 the vibrational state during radiative decay of the excited states. 
 
 The lowest frequency modes are vibrations of the M-O-C group. In case of SrOPh,
-the three lowest frequency modes, in order are: the in-plane M-O-C bend, the
-out-of-plane M-O-C bend, and the M-O stretch. There is at least one more set of
-higher frequency modes that has a significant component along each of these
-three motions. The deuterated molecule shares similar traits.
+the three lowest frequency modes, in order are: the in-plane M-O-C bend, $\nu
+_{33} (b _2)$, the out-of-plane M-O-C bend, $\nu _{22} (b _1)$, and the M-O
+stretch, $\nu _{12} (a _1)$. There is at least one more set of higher frequency
+modes that has a significant component along each of these three motions. The
+deuterated molecule shares similar traits.
 
 Out of these three types of motion, the best studied one is the M-O stretch.
 The reason behind it lies in the extensively studied fluorescence spectrum of
@@ -198,6 +199,14 @@ values of the vertical excitation energies.
 
 In the multistate and multimode KDC Hamiltonian three excited electronic states are coupled: $\tilde{A}$, $\tilde{B}$, and $\tilde{C}$. A varying number of normal modes is included throughout the simulations in order to observe the impact of various modes on the vibronic spectrum. All 33 normal modes cannot be included in the simulation as this leads to numerically intractable problem. The parameters of the KDC Hamiltonian are expanded around the ground state's equilibrium geometry.
 
+The molecular orientation and normal mode labels follow the Mulliken's
+convention.~\autocite{Mulliken:55:symnot} The molecule is oriented in the
+$yz$-plane with the symmetry axis along the $z$ axis. The normal modes are
+ordered first by their symmetry: $a_1$, $a_2$, $b_1$, $b_2$. Within each
+symmetry block the modes are ordered by their harmonic frequencies in a
+decreasing order. Out of the 33 normal modes of the molecule 12 transforms with
+$a _1$ irrep, 3 with $a_2$, 7 with $b _1$, and 11 with $b _2$.
+
 \section{Results}
 
 This section opens with description of the parameters that enter the KDC
@@ -247,10 +256,10 @@ the appearance of the vibronic features.
     \label{tab:sroph_vertical_dT_SOC}
 \end{table}
 
-This section discusses the case of strontium phenoxide. The parameters of the
-KDC Hamiltonian, Eq.~\eqref{eq:kdc}, are expanded around the optimized geometry
-of the $\tilde{X}$ state. This section first presents the vertical excitation
-energies, then the harmonic frequencies, and the couplings.
+The parameters of the KDC Hamiltonian, Eq.~\eqref{eq:kdc}, are expanded around
+the optimized geometry of the $\tilde{X}$ state. This section first presents
+the vertical excitation energies, then the harmonic frequencies, and the
+couplings.
 
 The vertical excitation energies were calculated using a composite scheme
 discussed in the Sec.~\ref{sec:methods}. Table~\ref{tab:sroph_vertical_cbs}
@@ -270,15 +279,16 @@ final values of this composite scheme, these values are also plotted on
 figure~\ref{fig:SrCouplings}.
 
 All remaining parameters of the model are expanded in the basis of normal modes
-of the ground state. The harmonic frequency of the fully symmetric stretch is
-$239$~cm$^{-1}$. The harmonic frequencies of the non-fully-symmetric modes,
-which are involved the most in the vibronic coupling, are $65$~cm$^{-1}$
-(in-plane Sr-O-C bend), $84$~cm$^{-1}$ (out-of-plane Sr-O-C bend). The next
-mode, in the order of increasing frequency, has the frequency $273$~cm$^{-1}$
-and is also largely an out-of-plane Sr-O-C bend. These four modes, their
-combinations, and their couplings produce most of the vibronic features in the
-region between and close to the $\tilde{A}$, and $\tilde{B}$ states, which in
-this model are separated by the vertical gap of $275$~cm$^{-1}$.
+of the ground state. The harmonic frequency of the fully symmetric stretch,
+$\nu _{12} (a_1)$ is $239$~cm$^{-1}$. The harmonic frequencies of the
+non-fully-symmetric modes are: $65$~cm$^{-1}$ for the in-plane Sr-O-C bend,
+$\nu _{33}(b_2)$, and $84$~cm$^{-1}$ for the out-of-plane Sr-O-C bend, $\nu
+_{22} (b _1)$. The next mode, in the order of increasing frequency, $\nu _{21}
+(b _1)$, has the frequency $273$~cm$^{-1}$ and is also largely an out-of-plane
+Sr-O-C bend. These four modes, their combinations, and their couplings produce
+most of the vibronic features in the region between and close to the
+$\tilde{A}$, and $\tilde{B}$ states, which in this model are separated by the
+vertical gap of $275$~cm$^{-1}$.
 
 \begin{figure}
     \begin{center}
@@ -338,11 +348,12 @@ include the vibronic couplings, see figure~\ref{fig:SrOPh_0t650}.
 The uncoupled spectrum is typical for a laser-coolable molecule. The most
 prominent peak in the spectrum corresponds to the electronic transition which
 does not change the vibrational state. The key transitions which change the
-vibrational state excite the $\nu _3$ mode, i.e., the mode with a significant
-Sr-O stretching component. The progression in $\nu _3$ is present both in the
-$\tilde{A}$ and $\tilde{B}$ states, but the peaks' intensities make less than
-$10$~\% of the 0-0 peak's intensity. Both simulations also show the small $\nu
-_8$ peak close to the $600$~cm$^{-1}$ mark, that corresponds to the second mode
+vibrational state excite the $\nu _{12}$ mode, i.e., the mode with a
+significant Sr-O stretching component. The progression in $\nu _{12}$ is
+present both in the $\tilde{A}$ and $\tilde{B}$ states, but the peaks'
+intensities make less than $10$~\% of the 0-0 peak's intensity. Both
+simulations also show the small $\nu _{11} (a _1)$ peak close to the
+$600$~cm$^{-1}$ mark, that corresponds to the second, lowest-frequency mode
 with the Sr-O stretching component. This is a complete description of the major
 features of the spectrum visible up to about the first $600$~cm$^{-1}$. The
 simulation which neglects the vibronic couplings reproduces these features very
@@ -351,7 +362,9 @@ of the vibronic couplings.
 
 \begin{figure}
     \begin{center}
-        \includegraphics[width=12 cm]{figures/SrOPh_0t650_zoom_annot.pdf}
+        \includegraphics
+        [width=12 cm]
+        {figures/SrOPh_0t650_zoom_annot_Mulliken.pdf}
     \end{center}
     \caption{
         Simulated vibronic spectrum with annotations marking peak's
@@ -387,8 +400,8 @@ figure~\ref{fig:SrCouplings}. Such modes are inactive in the uncoupled, i.e.,
 Franck-Condon simulation. The couplings allow for mixing of electronic states
 along the coupling modes. 
 
-The lowest-energy progression of this type appears for the $\nu _1$ mode
-(out-of-plane Sr-O-C bending) and is labeled \texttt{A(nv1)} on
+The lowest-energy progression of this type appears for the $\nu _{33}$ mode
+(in-plane Sr-O-C bending) and is labeled $^{\tilde{A}}33^n$ on
 figure~\ref{fig:SrOPh_0t650_assigned}. The symmetry of vibronic peaks in this
 progression changes between the symmetry of the ``host'', $\tilde{A}$
 electronic state (for even number of quanta) and of the ``coupled'',
@@ -398,12 +411,12 @@ distribution. The intensities depend not only on the number of vibrational
 quanta but also on the energetic distance to the state which leaks the
 intensity.
 
-Analogous progressions are also marked as \texttt{A(nv1,1v3)} and
-\texttt{B(nv2)} on figure~\ref{fig:SrOPh_0t650_assigned}. The latter one
+Analogous progressions are also marked as $^{\tilde{A}} 12 ^1 33 ^n$ and
+$^{\tilde{B}}22 ^n$ on figure~\ref{fig:SrOPh_0t650_assigned}. The latter one
 corresponds to the coupling of $\tilde{B}$ and $\tilde{C}$ states along the
-$\nu _2$ mode. Peaks \texttt{B(1v2,1v3)} and \texttt{B(1v4)} also appear
-through this mechanism, however, only the first peak of both series is labelled
-in the figure~\ref{fig:SrOPh_0t650_assigned}.
+$\nu _{22}$ mode. Peaks $^{\tilde{B}}12^1 22^1$ and $^{\tilde{B}}21 ^1$ also
+appear through this mechanism, however, only the first peak of both series is
+visible in the figure~\ref{fig:SrOPh_0t650_assigned}.
 
 \subsubsection{Second-order coupling between $\tilde{A}$ and $\tilde{B}$
 states} 
@@ -419,28 +432,28 @@ $\tilde{A}$ and $\tilde{B}$ states couple by a second-order mechanism.
 
 Symmetry of the $\tilde{A}$ and $\tilde{B}$ states requires that these two can
 only mix along modes of the $a _2$ symmetry. Figure~\ref{fig:SrCouplings} shows
-that for the lowest-frequency mode of this symmetry (mode $\nu _5$) the
-coupling is vanishingly small, making it unlikely to produce any significant
-features. There are however another type of modes that have the desired $a _2$
-symmetry. These are the modes that appear as combinations of modes of $b _1$
-and $b _2$ symmetry; these are the ones coupling $\tilde{B}$-$\tilde{C}$ and
-$\tilde{A}$-$\tilde{C}$ states, respectively, and these modes exhibit
-significant vibronic activity, as discussed earlier. We refer to the results of
-couplings along the combination of modes of different symmetries as the
-second-order effects.
+that for the lowest-frequency mode of this symmetry (mode $\nu _{15} (a_2)$
+with harmonic frequency $426$~cm$^{-1}$) the coupling is vanishingly small,
+making it unlikely to produce any significant features. There are however
+another type of modes that have the desired $a _2$ symmetry. These are the
+modes that appear as combinations of modes of $b _1$ and $b _2$ symmetry; these
+are the ones coupling $\tilde{B}$-$\tilde{C}$ and $\tilde{A}$-$\tilde{C}$
+states, respectively, and these modes exhibit significant vibronic activity, as
+discussed earlier. We call the vibronic features appearing along such
+combination modes as the second-order effects.
 
-The progression labelled as \texttt{A(nv1,1v2)} on
+The progression labelled as $^{\tilde{A}}22 ^1 33 ^n$ on
 figure~\ref{fig:SrOPh_0t650_assigned} is the second-order effect. This
-progression is built out of the $\nu _1$ (Sr-O-C in-plane bend) and $\nu _2$
-(Sr-O-C out-of-plane bend) modes. These vibronic peaks are are bright by
+progression is built out of the $\nu _{33}$ (Sr-O-C in-plane bend) and $\nu
+_{22}$ (Sr-O-C out-of-plane bend) modes. These vibronic peaks are are bright by
 drawing the intensity from mixing with the $\tilde{B}$ state. Only odd number
-of excitations appear, as all of \texttt{A(2nv1,1v2)} states have the $A _2$
-symmetry which are dark in the 0K absorption spectrum. The peak individually
-labelled as \texttt{A(1v1,3v2)} can also be viewed as the second peak in the
-unlabelled progression \texttt{A(1v1,nv2)}.
+of excitations appear, as all of $^{\tilde{B}22 ^1 33 ^{2n}}$ states have the
+$A _2$ symmetry which are dark in the 0K absorption spectrum. The peak
+individually labelled as $^{\tilde{A}}22^3 33^1$ can also be viewed as the
+second peak in the unlabelled progression $^{\tilde{A}}22^n 33^1$.
 
-The coupling between the $\nu _1$ and $\nu _2$ modes is also interesting by
-comparison with the work on linear triatomics, like CaOH or YbOH. These two
+The coupling between the $\nu _{33}$ and $\nu _{22}$ modes is also interesting
+by comparison with the work on linear triatomics, like CaOH or YbOH. These two
 modes would be degenerate bends of the Sr-O-C part of the molecule if it was
 not for the symmetry-breaking phenol ring. In case of linear triatomics, the
 excited states of these bending modes can be expressed in a basis forming
@@ -452,22 +465,22 @@ degenerate pair in the linear molecule limit, however it was already noted that
 the angular momentum of the $\tilde{A}$ and $\tilde{B}$ states is largely
 quenched by the symmetry-breaking phenol ring.\autocite{Augenbraun:CaOPh:2022}
 Given this perspective, the coupling of the $\tilde{A}$ and $\tilde{B}$ states
-through the composite $\nu _1$ and $\nu _2$ modes can be correlated to the
+through the combined $\nu _{33}$ and $\nu _{22}$ modes can be correlated to the
 Renner-Teller coupling in linear molecules. 
 
 The second-order effect also displays the modulation in the relative feature
-intensities. The peak \texttt{A(1v1,1v2)} is more intense than
-\texttt{A(3v1,1v2)}, where it seems like the vibrational overlap dominates over
-the intensity borrowing coming from mixing, while the \texttt{A(1v1,3v2)}
-shows higher intensity than \texttt{A(3v1,1v2)} likely due to the increased
-proximity to the very strong \texttt{B(0)} peak. 
+intensities. The peak $^{\tilde{A}} 22^1 33^1$ is more intense than
+$^{\tilde{A}} 22^1 33^3$, where it seems like the vibrational overlap dominates
+over the intensity borrowing coming from mixing, while the $^{\tilde{A}} 22^3
+33^1$ peak shows higher intensity than $^{\tilde{A}} 22^1 33^3$ likely due to
+the increased proximity to the very strong $^{\tilde{B}0}$ peak. 
 
-Another intense peak of the second-order type is the \texttt{A(1v1,1v4)} one.
-The mode $\nu _4$ has a significant component of the Sr-O-C out-of-plane bend,
-similar to $\nu _2$. Despite the fact that the coupling along $\nu _4$ is
-weaker than the coupling along $\nu _2$, this peak is much more intense than
-the \texttt{A(1v1,1v2)}, likely due to its proximity to the \texttt{B(0)}
-state, allowing for a stronger mixing.
+Another intense peak of the second-order type is the $^{\tilde{A}} 21^1 33^1$
+one. The mode $\nu _{21}$ has a significant component of the Sr-O-C
+out-of-plane bend, similar to $\nu _{22}$. Despite the fact that the coupling
+along $\nu _{21}$ is weaker than the coupling along $\nu _{22}$, this peak is
+much more intense than the $^{\tilde{A}} 22^1 33^1$, a difference that is
+explored further in the next section.
 
 \subsubsection{Sensitivity of peak features on the parameters of the
 Hamiltonian}
@@ -478,14 +491,13 @@ Hamiltonian}
         \includegraphics[width=12 cm]{./figures/decomposition.pdf}
     \end{center}
     \caption{
-        Dependents of the content of the uncoupled \texttt{B(0)} state on the
+        Dependents of the content of the uncoupled $^{\tilde{B}}0$ state on the
         vertical excitation energy gap between the $\tilde{A}$ and $\tilde{B}$
         states for three states in the proximity of the $\tilde{B}$ state's
         origin.
     }
     \label{fig:decomposition}
 \end{figure}
-
 
 The discussion of the second-order vibronic effects highlights that the
 intensity of the vibronic features is strongly tied not only to the strength of
@@ -498,12 +510,13 @@ To estimate the relevance of the vibronic structure findings, this section
 presents a study of the sensitivity of the vibronic peaks' character to the
 value of the gap between the $\tilde{A}$ and $\tilde{B}$ states.
 
-We focus on the \texttt{B(0)} state and the two nearest vibronic peaks
+We focus on the $^{\tilde{B}}0$ state and the two nearest vibronic peaks
 resulting from the second-order coupling to the $\tilde{A}$ state: the
-\texttt{A(1v1,3v2)} and \texttt{A(1v1,1v4)} states. These vibronic states are
-chosen as they draw the intensity from the \texttt{B(0)} and are energetically
-the closest, therefore these states are expected to show the strongest response
-to any changes in vertical excitation energy of the $\tilde{B}$ state.
+$^{\tilde{A}}22^3 33^1$ and $^{\tilde{A}}21^1 33 ^1$ states. These vibronic
+states are chosen as they draw the intensity from the $^{\tilde{B}}0$ and are
+energetically the closest, therefore these states are expected to show the
+strongest response to any changes in vertical excitation energy of the
+$\tilde{B}$ state.
 
 Figure~\ref{fig:decomposition} presents changes to the character of the
 vibronic peaks as a function of the vertical gap between the $\tilde{A}$ and
@@ -511,31 +524,31 @@ $\tilde{B}$ states. The gap is changed by increasing the vertical excitation
 energy of the $\tilde{B}$ state while keeping the $\tilde{A}$ state's position
 unchanged. The character of the vibronic state is measured as an overlap
 between the coupled state and the uncoupled, i.e., Franck-Condon, version of
-the \texttt{B(0)} state, the details of this procedure are described in
+the $^{\tilde{B}}0$ state, the details of this procedure are described in
 Ref.~\cite{Wojcik:ozone:2024}.
 
-The coupled \texttt{B(0)} state shows significant resemblance to its uncoupled
-version. The overlap value drops when the energetic spacing to another coupled
-state becomes significant. The curve for the \texttt{A(1v1,3v2)} state shows
-that the coupling to the \texttt{B(0)} state results in a maximum mixing at the
-$\tilde{A}$-$\tilde{B}$ gap close to 295~cm$^{-1}$. A denser sampling in that
-region would likely reveal an even stronger mixing between the two states. The
-case of \texttt{A(1v1,1v4)} state is an example of such stronger mixing, at the
-values close to 315~cm$^{-1}$ both states carry equal content of the
-\texttt{B(0)} state. The two top, right-most points on the figure should in
-fact already switch the colors as the character of the two states has already
-changed.
+The coupled $^{\tilde{B}}0$ state shows significant resemblance to its
+uncoupled version. The overlap value drops when the energetic spacing to
+another coupled state becomes significant. The curve for the $^{\tilde{A}}22^3
+33^1$ state shows that the coupling to the $^{\tilde{B}}0$ state results in a
+maximum mixing at the $\tilde{A}$-$\tilde{B}$ gap close to 295~cm$^{-1}$. A
+denser sampling in that region would likely reveal an even stronger mixing
+between the two states. The case of $^{\tilde{A}}21 ^1 33 ^1$ state is an
+example of such stronger mixing, at the values close to 315~cm$^{-1}$ both
+states carry equal content of the $^{\tilde{B}}0$ state. The two top,
+right-most points on the figure should in fact already switch the colors as the
+character of the two states has already changed.
 
-The example of coupling of \texttt{B(0)} to either \texttt{A(1v1,3v2)} or
-\texttt{A(1v1,1v4)} shows how vibronic effects can lead to a very bright state
-can leaking as much as half of its intensity to an otherwise dark state. The
-difference in the response of \texttt{A(1v1,3v2)} and \texttt{A(1v1,1v4)} to
-the position of the \texttt{B(0)} state shows that for some dark states the
-vibronic coupling can produce significant intensity borrowing even if the
-positions of the uncoupled states are relatively far apart (the
-\texttt{A(1v1,1v4)} case), while for other states (the \texttt{A(1v1,3v2)}
-case) the accidental degeneracy of the uncoupled states is needed in order to
-observe strong mixing.
+The example of coupling of $^{\tilde{B}}0$ to either $^{\tilde{A}}22^3 33^1$ or
+$^{\tilde{A}}21 ^1 33 ^1$ shows how the vibronic effects can lead to a very
+bright state leaking as much as half of its intensity to an otherwise dark
+state. The difference in the response of $^{\tilde{A}}22 ^3 33 ^1$ and
+$^{\tilde{A}21^1 33^1}$ to the position of the $^{\tilde{B}}0$ state shows that
+for some dark states the vibronic coupling can produce significant intensity
+borrowing even if the positions of the uncoupled states are relatively far
+apart (the $^{\tilde{A}}21 ^1 33 ^1$ case), while for other states (the
+$^{\tilde{A}} 22 ^3 33^1$ case) the accidental degeneracy of the uncoupled
+states is needed in order to observe strong mixing.
 
 
 \subsubsection{Isotope substitution}
@@ -547,7 +560,7 @@ observe strong mixing.
     \end{center}
     \caption{
         Matrix of inner products between the normal modes of the ground state
-        of SrOPh and its deuterated version SrOPh-d5. Column and row labels
+        of SrOPh and its deuterated version SrOPh-d$_5$. Column and row labels
         show mode frequencies in~cm$^{-1}$.
     }
     \label{fig:sroph_duszynski}
@@ -562,7 +575,7 @@ changes in the frequencies of the uncoupled modes. Instead of considering a
 model in which these frequencies are shifted arbitrarily, this section
 considers the case of deuterated molecules.
 
-Deuterated strontium phenoxide SrOPh-d5 would be characterized by the same
+Deuterated strontium phenoxide SrOPh-d$_5$ would be characterized by the same
 parameters as SrOPh, except for changes in the normal modes, effectively
 allowing to study, also experimentally, the response of the vibronic spectrum
 to the shifts in the positions of uncoupled vibrational states.
@@ -571,13 +584,11 @@ The changes of the normal modes of the strontium phenoxide due to deuteration
 are visualized on figure~\ref{fig:sroph_duszynski}. The figure presents the
 matrix of inner products between the two sets of normal modes, also known as
 the Duschinsky rotation matrix. The columns and rows of the matrix additionally
-present the harmonic wavenumbers of the corresponding modes. The figure shows
+list the harmonic wavenumbers of the corresponding modes. The figure shows
 that the lowest frequency modes remain largely unchanged in the deuterated
 molecule and can still be identified as various displacements of the Sr-O-C
-group of atoms. The harmonic wavenumbers of the deuterated modes lowers by
-about 5\%. The undeuterated, fully-symmetric mode $\nu _8$ (second mode with a
-significant Sr-O stretching component) becomes mode $\nu _9$ in the deuterated
-molecule. The higher frequency modes change not only its frequencies but also
+group of atoms. The harmonic wavenumbers of the deuterated modes lower by
+about 5\%. The medium-frequency modes change not only its frequencies but also
 its shape, however, none of these modes was significant for the simulations
 discussed earlier.
 
@@ -591,7 +602,7 @@ effect.
         \includegraphics[width=12 cm]{./figures/SrOPh5dCouplings.pdf}
     \end{center}
     \caption{
-        Diabatic couplings for SrOPh-d5, compare to
+        Diabatic couplings for SrOPh-d$_5$, compare to
         figure~\ref{fig:SrCouplings}.
     }
     \label{fig:srd5_couplings}
@@ -601,9 +612,9 @@ With the changes of the normal modes, the expansion coefficients of the KDC
 Hamiltonian, Eqs.~\eqref{eq:kdc_Voff} and \eqref{eq:kdc_Vdiag} change as well.
 Figure~\ref{fig:srd5_couplings}, presents the changed values and structure of
 the diabatic couplings. The key qualitative properties are preserved, i.e.,
-strong coupling of $\tilde{A}$-$\tilde{C}$ states along $\nu _1$, strong
-coupling of $\tilde{B}$-$\tilde{C}$ states along $\nu _2$ and $\nu _4$, and
-vanishing couplings between $\tilde{A}$-$\tilde{B}$. Quantitatively, the
+strong coupling of $\tilde{A}$-$\tilde{C}$ states along $\nu _{33}$, strong
+coupling of $\tilde{B}$-$\tilde{C}$ states along $\nu _{22}$ and $\nu _{21}$,
+and vanishing couplings between $\tilde{A}$-$\tilde{B}$. Quantitatively, the
 couplings strengths become a little weaker. Overall, the consequence of this
 change is that the comparison between the deuterated and undeuterated molecules
 probes a few more parameters of the KDC Hamiltonian than only the position of
@@ -611,12 +622,15 @@ uncoupled vibronic states.
 
 \begin{figure}
     \begin{center}
-        \includegraphics[width=12 cm]{./figures/SrOPhd5_0t650_zoom_annot.pdf}
+        \includegraphics
+        [width=12 cm]
+        {./figures/SrOPhd5_0t650_zoom_annot_Mulliken.pdf}
     \end{center}
     \caption{
-        Vibronic absorption spectrum of SrOPh-d5, compare with the undeuterated
-        spectrum from figure~\ref{fig:SrOPh_0t650_assigned} Annotations mark
-        the peaks discussed in Sec.~\ref{sec:results:simulations:gap}.
+        Vibronic absorption spectrum of SrOPh-d$_5$, compare with the
+        undeuterated spectrum from figure~\ref{fig:SrOPh_0t650_assigned}.
+        Annotations mark the peaks discussed in
+        Sec.~\ref{sec:results:simulations:gap}.
     }
     \label{fig:Srd5_spectrum}
 \end{figure}
@@ -627,10 +641,10 @@ Sec.~\ref{sec:results:simulations:linear} remain largely unchanged upon the
 deuteration with the only difference appearing due to the small frequency
 shifts of the deuterated modes. There are however two states that respond to
 the deuteration far stronger, these are the same sates as discussed in
-Sec.~\ref{sec:results:simulations:gap}, the \texttt{A(1v1,3v2)} and
-\texttt{A(1v1,1v4)}. For both of them the small change in the frequency is met
-with a significant increase in their intensity, as the shift moves both sates
-closer to the bright \texttt{B(0)} peak.
+Sec.~\ref{sec:results:simulations:gap}, the $^{\tilde{A}}22^3 33^1$ and
+$^{\tilde{A}}21^1 33^1$. For both of them the small change in the frequency is
+met with a significant increase in their intensity, as the shift moves both
+sates closer to the bright $^{\tilde{B}}0$ peak.
 
 \section{Summary}
 
@@ -645,6 +659,10 @@ excitation energies or harmonic frequencies of the normal modes. The modulation
 of harmonic frequencies that is afforded by the deuteration of the phenoxide
 group helps to connect the experimentally observed vibronic features with the
 modeled couplings scheme.
+
+The \emph{ab initio} calculations show that the vertical excitation
+energy of the $\tilde{C}$ state is more sensitive to the basis set size and
+level of correlation than the $\tilde{A}$ and $\tilde{B}$ states.
 
 \newpage
 \printbibliography{}
